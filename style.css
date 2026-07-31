@@ -63,6 +63,10 @@ body{
   list-style: none;
   text-decoration: none;
   background: transparent;
+  padding: 10px 20px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  cursor: pointer;
 }
 @media screen and (max-width:650px){
   .container{
@@ -70,6 +74,6 @@ body{
     gap: 50px;
   }
   .img img,canvas{
-  max-width: 80vw;
+  max-width: 70vw;
 }
 }
