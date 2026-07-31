@@ -18,6 +18,7 @@
   <meta name="twitter:description" content="Edit your images online for free.">
   <meta name="twitter:image" content="preview.png">
   <link rel="icon" type="image/png" href="image.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link rel="stylesheet" href="style.css"/>
   <title>Image Editor</title>
 </head>
@@ -65,7 +66,9 @@
           <input type="range" id="hue-rotate" min="0" max="350" value="0">
         </li>
         <li>
-          <a download="image" id="download" class="download">Download</a>
+          <a download="image" id="download" class="download">
+            <i class="fa-solid fa-download"></i> Download
+          </a>
           <span onclick="resetValue()">Reset</span>
         </li>
       </ul>
