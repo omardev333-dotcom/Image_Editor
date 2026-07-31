@@ -51,16 +51,18 @@ body{
   flex-direction: row;
   justify-content: space-around;
 }
-.filters ul li a,span{
-  color: #fff;
+.filters ul li a,span:active{
+  color: #000;
   padding: 10px 20px;
-  background: #060;
+  background: #0000ff;
+  border: 2px solid #000;
+  border-radius: 10px;
   cursor: pointer;
 }
-.filters ul li a:active, span:active{
+.filters ul li a:active, span{
   list-style: none;
   text-decoration: none;
-  background: #000;
+  background: transparent;
 }
 @media screen and (max-width:650px){
   .container{
