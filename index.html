@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Free online image editor. Adjust brightness, contrast, saturation, blur, grayscale, sepia, hue rotation and download edited images instantly.">
+  <meta name="keywords" content="Image Editor, Photo Editor, Online Image Editor, Free Image Editor, HTML CSS JavaScript">
+  <meta name="author" content="OMAR ALAA">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://your-domain.vercel.app/">
+  <meta property="og:title" content="Free Online Image Editor">
+  <meta property="og:description" content="Edit images online with brightness, contrast, blur, grayscale, sepia and more.">
+  <meta property="og:image" content="preview.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Free Online Image Editor">
+  <meta name="twitter:description" content="Edit your images online for free.">
+  <meta name="twitter:image" content="preview.png">
+  <link rel="stylesheet" href="style.css"/>
+  <title>Image Editor</title>
+</head>
+<body>
+  <div class="container">
+    <div class="img">
+     <div class="img-box">
+       <img id="img">
+       <canvas id="canvas"></canvas>
+     </div>
+     <div class="upload">
+      <label for="upload">Upload</label>
+      <input type="file" id="upload" accept="image/*">
+     </div>
+    </div>
+      
+    <div class="filters">
+      <ul>
+        <li>
+          <label for="saturate">Saturate</label>
+          <input type="range" id="saturate" min="0" max="200" value="100">
+        </li>
+        <li>
+          <label for="contrast">Contrast</label>
+          <input type="range" id="contrast" min="0" max="200" value="100">
+        </li>
+        <li>
+          <label for="brightness">Brightness</label>
+          <input type="range" id="brightness" min="0" max="200" value="100">
+        </li>
+        <li>
+          <label for="sepia">Sepia</label>
+          <input type="range" id="sepia" min="0" max="200" value="0">
+        </li>
+        <li>
+          <label for="grayscale">Grayscale</label>
+          <input type="range" id="grayscale" step="0.1" min="0" max="1" value="0">
+        </li>
+        <li>
+          <label for="blur">Blur</label>
+          <input type="range" id="blur" step="0.1" min="0" max="10" value="0">
+        </li>
+        <li>
+          <label for="hue-rotate">Hue rotate</label>
+          <input type="range" id="hue-rotate" min="0" max="350" value="0">
+        </li>
+        <li>
+          <a download="image" id="download" class="download">Download</a>
+          <span onclick="resetValue()">Reset</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
